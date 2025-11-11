@@ -15,6 +15,9 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
+    "build": "npm run clean && npx tsc && npm run copy-files",
+    "clean": "rm -rf ./dist",
+    "copy-files": "cp ./src/*.css ./dist/",
     "lint": "npx eslint src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
