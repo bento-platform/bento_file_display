@@ -1,0 +1,51 @@
+{
+  "name": "bento_file_display",
+  "version": "0.1.0",
+  "description": "TypeScript component for displaying files in Bento front-ends.",
+  "homepage": "https://github.com/bento-platform/bento_file_display#readme",
+  "bugs": {
+    "url": "https://github.com/bento-platform/bento_file_display/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bento-platform/bento_file_display.git"
+  },
+  "license": "LGPL-3.0-only",
+  "author": "David Lougheed <david.lougheed@mail.mcgill.ca>",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "mammoth": "^1.11.0",
+    "papaparse": "^5.5.3",
+    "react-markdown": "^9.1.0",
+    "react-pdf": "^9.2.1",
+    "react-syntax-highlighter": "^16.1.0",
+    "react18-json-view": "^0.2.9",
+    "remark-gfm": "^4.0.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "peerDependencies": {
+    "antd": "^5.28.1",
+    "@ant-design/icons": "^5.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/papaparse": "^5.5.0",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "globals": "^15.11.0",
+    "prettier": "^3.3.3",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4"
+  }
+}
