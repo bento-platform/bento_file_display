@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef } from "react";
 import { Spin } from "antd";
-import type { BlobDisplayProps } from "@/types/blob";
+import type { BlobDisplayProps } from "./types";
 
 interface ImageBlobDisplayProps extends BlobDisplayProps {
   alt: string;

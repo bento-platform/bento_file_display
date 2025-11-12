@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { Spin } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
 
-import type { BlobDisplayProps } from "@/types/blob";
+import type { BlobDisplayProps } from "./types";
 
 const HtmlDisplay = ({ contents, loading }: BlobDisplayProps) => {
   const iframeRef = useRef<HTMLIFrameElement>(null);

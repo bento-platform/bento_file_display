@@ -1,4 +1,4 @@
-import { VIEWABLE_FILE_EXTENSIONS } from "@/constants";
+import { VIEWABLE_FILE_EXTENSIONS } from "./constants";
 
 // noinspection JSUnusedGlobalSymbols
 export const fileHasViewableExtension = (filename: string) =>

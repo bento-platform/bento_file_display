@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
 import { Collapse, Select, Typography } from "antd";
 
-import JsonView from "@/components/JsonView";
-import type { JSONType } from "@/types/json";
+import JsonView from "../JsonView";
+import type { JSONType } from "../../types";
 
 const DEFAULT_JSON_VIEW_OPTIONS = {
   collapsed: true,

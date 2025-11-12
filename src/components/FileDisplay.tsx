@@ -25,11 +25,10 @@ import {
   IMAGE_FILE_EXTENSIONS,
   VIDEO_FILE_EXTENSIONS,
   CODE_STYLE,
-} from "@/constants";
+} from "../constants";
 
-import type { BlobDisplayProps } from "@/types/blob";
-import type { AuthHeader } from "@/types/http";
-import type { JSONType } from "@/types/json";
+import type { BlobDisplayProps } from "./specific/types";
+import type { AuthHeader, JSONType } from "../types";
 
 import AudioDisplay from "./specific/AudioDisplay";
 import CsvDisplay from "./specific/CsvDisplay";

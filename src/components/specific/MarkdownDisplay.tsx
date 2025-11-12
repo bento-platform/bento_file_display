@@ -12,7 +12,7 @@ import remarkGfm from "remark-gfm";
 import { type CheckboxOptionType, Radio, type RadioChangeEvent, Skeleton } from "antd";
 import { CodeOutlined, PicRightOutlined } from "@ant-design/icons";
 
-import { CODE_STYLE } from "@/constants";
+import { CODE_STYLE } from "../../constants";
 
 const REMARK_PLUGINS = [remarkGfm];
 

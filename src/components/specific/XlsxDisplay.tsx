@@ -4,7 +4,7 @@ import { read, utils, type WorkBook } from "xlsx";
 import { Card } from "antd";
 
 import SpreadsheetTable, { SPREADSHEET_ROW_KEY_PROP, type SpreadsheetTableProps } from "./SpreadsheetTable";
-import type { BlobDisplayProps } from "@/types/blob";
+import type { BlobDisplayProps } from "./types";
 
 type XlsxRecord = Record<string, string>;
 type XlsxData = XlsxRecord[];

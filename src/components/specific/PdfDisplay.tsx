@@ -5,7 +5,7 @@ import type { PDFDocumentProxy } from "pdfjs-dist";
 import { Button } from "antd";
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
 
-import type { AuthHeader } from "@/types/http";
+import type { AuthHeader } from "../../types";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL("pdfjs-dist/build/pdf.worker.min.mjs", import.meta.url).toString();
 

@@ -1,6 +1,6 @@
 import ReactJson from "react18-json-view";
 import type { Collapsed } from "react18-json-view/dist/types";
-import type { JSONType } from "@/types/json";
+import type { JSONType } from "../types";
 
 import "react18-json-view/src/style.css";
 

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Skeleton } from "antd";
-import type { BlobDisplayProps } from "@/types/blob";
+import type { BlobDisplayProps } from "./types";
 
 const AudioDisplay = ({ contents, loading }: BlobDisplayProps) => {
   const audioRef = useRef<HTMLAudioElement>(null);

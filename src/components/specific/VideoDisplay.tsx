@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Spin } from "antd";
-import type { BlobDisplayProps } from "@/types/blob";
+import type { BlobDisplayProps } from "./types";
 
 const VideoDisplay = ({ contents, loading }: BlobDisplayProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);

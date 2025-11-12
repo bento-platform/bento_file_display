@@ -3,7 +3,7 @@ import Papa from "papaparse";
 import { Alert } from "antd";
 
 import SpreadsheetTable, { SPREADSHEET_ROW_KEY_PROP, type SpreadsheetTableProps } from "./SpreadsheetTable";
-import type { BlobDisplayProps } from "@/types/blob";
+import type { BlobDisplayProps } from "./types";
 
 const DEFAULT_COLUMN = { key: "col" };
 

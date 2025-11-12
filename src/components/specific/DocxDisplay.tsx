@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
-import mammoth from "mammoth/mammoth.browser";
+import mammoth from "mammoth/lib";
 import { Alert, Skeleton } from "antd";
 
-import type { BlobDisplayProps } from "@/types/blob";
+import type { BlobDisplayProps } from "./types";
 
 const MAMMOTH_OPTIONS = {
   convertImage: mammoth.images.imgElement((image) =>
