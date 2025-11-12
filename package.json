@@ -1,6 +1,6 @@
 {
   "name": "bento_file_display",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript component for displaying files in Bento front-ends.",
   "homepage": "https://github.com/bento-platform/bento_file_display#readme",
   "bugs": {
