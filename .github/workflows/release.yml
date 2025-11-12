@@ -13,7 +13,7 @@ jobs:
       - name: Run build script
         run: npm run build
       - name: Make release artifact
-        run: tar -cCvzf bento_file_display.tgz ./dist/*
+        run: tar -cvzf bento_file_display.tgz -C ./dist .
       - name: Upload release artifacts
         uses: actions/github-script@v8
         with: # adapted from https://github.com/bento-platform/katsu/blob/develop/.github/workflows/release.yml
