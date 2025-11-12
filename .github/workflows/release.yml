@@ -14,7 +14,14 @@ jobs:
       - name: Run build script
         run: npm run build
       - name: Make release artifact
-        run: tar -cvzf bento_file_display.tgz ./dist package.json package-lock.json README.md LICENSE
+        run: |
+          mkdir package
+          mv dist package/
+          cp package.json package/
+          cp package-lock.json package/
+          cp README.md package/
+          cp LICENSE package/
+          tar -cvzf bento_file_display.tgz package
       - name: Upload release artifacts
         uses: actions/github-script@v8
         with: # adapted from https://github.com/bento-platform/katsu/blob/develop/.github/workflows/release.yml
