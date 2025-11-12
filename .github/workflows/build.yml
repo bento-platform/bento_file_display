@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Install modules
-        run: npm install
+        run: npm ci
       - name: Run build script
         run: npm run build

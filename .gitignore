@@ -1,6 +1,12 @@
-dist/
 node_modules/
+
+# Build
+dist/
+*.tgz
 
 # IDE
 .idea/
 .vscode/
+
+# Misc
+test*
