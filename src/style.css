@@ -35,10 +35,13 @@
 
 .bento-image-blob-display {
     position: relative;
+    text-align: center;
 }
 
 .bento-image-blob-display__img {
     max-width: 100%;
+    /* 90vh is max height of modal, minus 50px top & symmetrical bottom absolute positioning: */
+    max-height: calc(90vh - 100px);
     height: auto;
     position: relative;
     top: 0;
