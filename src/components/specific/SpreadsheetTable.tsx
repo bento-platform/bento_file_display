@@ -4,7 +4,9 @@ import type { ColumnsType } from "antd/lib/table";
 // For spreadsheets, we generate synthetic keys based on row indices
 export const SPREADSHEET_ROW_KEY_PROP = "__key__";
 
-const TABLE_PAGINATION: TableProps["pagination"] = { pageSize: 25 };
+const PAGE_SIZE = 25;
+
+const TABLE_PAGINATION: TableProps["pagination"] = { pageSize: PAGE_SIZE };
 const TABLE_SCROLL: TableProps["scroll"] = { x: true };
 
 export type SpreadsheetTableProps<T extends object> = {
@@ -19,7 +21,7 @@ const SpreadsheetTable = <T extends object>({ columns, dataSource, loading, show
     size="small"
     bordered={true}
     showHeader={showHeader ?? false}
-    pagination={TABLE_PAGINATION}
+    pagination={dataSource.length <= PAGE_SIZE ? false : TABLE_PAGINATION}
     scroll={TABLE_SCROLL}
     rowKey={SPREADSHEET_ROW_KEY_PROP}
     columns={columns}
